@@ -422,6 +422,20 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
     text-align: center; padding: 10px 4px 16px;
 }
 
+        .polaroid-photo {
+    aspect-ratio: 1 / 1;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.polaroid-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 /* =========================================
    WHY I LOVE YOU — FLIP CARDS
    ========================================= */
@@ -648,44 +662,69 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
         </section>
 
         <!-- GALLERY -->
-        <section class="section" id="gallery">
-            <p class="kicker reveal">Our Moments</p>
-            <h2 class="section-title reveal">Frames Worth Keeping</h2>
-            <p class="section-subtitle reveal">A little gallery of beautiful moments — swap these placeholders for our favorite photos 💕</p>
+        ```html
+<!-- GALLERY -->
+<section class="section" id="gallery">
+    <p class="kicker reveal">Our Moments</p>
+    <h2 class="section-title reveal">Frames Worth Keeping</h2>
+    <p class="section-subtitle reveal">
+        A little gallery of beautiful moments — six memories that mean the world to me 💕
+    </p>
 
-            <div class="polaroid-grid reveal">
-                <div class="polaroid">
-                    <span class="polaroid-sticker">💗</span>
-                    <div class="polaroid-photo"><span class="placeholder-icon">📷</span><span class="placeholder-label">your photo here</span></div>
-                    <p class="polaroid-caption">My Favorite Person</p>
-                </div>
-                <div class="polaroid">
-                    <span class="polaroid-sticker">✨</span>
-                    <div class="polaroid-photo"><span class="placeholder-icon">📷</span><span class="placeholder-label">your photo here</span></div>
-                    <p class="polaroid-caption">That Smile Though</p>
-                </div>
-                <div class="polaroid">
-                    <span class="polaroid-sticker">💛</span>
-                    <div class="polaroid-photo"><span class="placeholder-icon">📷</span><span class="placeholder-label">your photo here</span></div>
-                    <p class="polaroid-caption">Best Day Ever</p>
-                </div>
-                <div class="polaroid">
-                    <span class="polaroid-sticker">💕</span>
-                    <div class="polaroid-photo"><span class="placeholder-icon">📷</span><span class="placeholder-label">your photo here</span></div>
-                    <p class="polaroid-caption">You + Me</p>
-                </div>
-                <div class="polaroid">
-                    <span class="polaroid-sticker">🌙</span>
-                    <div class="polaroid-photo"><span class="placeholder-icon">📷</span><span class="placeholder-label">your photo here</span></div>
-                    <p class="polaroid-caption">Golden Hour</p>
-                </div>
-                <div class="polaroid">
-                    <span class="polaroid-sticker">👑</span>
-                    <div class="polaroid-photo"><span class="placeholder-icon">📷</span><span class="placeholder-label">your photo here</span></div>
-                    <p class="polaroid-caption">Forever My Girl</p>
-                </div>
+    <div class="polaroid-grid reveal">
+
+        <div class="polaroid">
+            <span class="polaroid-sticker">💗</span>
+            <div class="polaroid-photo">
+                <img src="1.jpg" alt="Our favorite memory" loading="lazy">
             </div>
-        </section>
+            <p class="polaroid-caption">My Favorite Person</p>
+        </div>
+
+        <div class="polaroid">
+            <span class="polaroid-sticker">✨</span>
+            <div class="polaroid-photo">
+                <img src="2.jpg" alt="That beautiful smile" loading="lazy">
+            </div>
+            <p class="polaroid-caption">That Smile Though</p>
+        </div>
+
+        <div class="polaroid">
+            <span class="polaroid-sticker">💛</span>
+            <div class="polaroid-photo">
+                <img src="3.jpg" alt="Our best day together" loading="lazy">
+            </div>
+            <p class="polaroid-caption">Best Day Ever</p>
+        </div>
+
+        <div class="polaroid">
+            <span class="polaroid-sticker">💕</span>
+            <div class="polaroid-photo">
+                <img src="4.jpg" alt="You and me together" loading="lazy">
+            </div>
+            <p class="polaroid-caption">You + Me</p>
+        </div>
+
+        <div class="polaroid">
+            <span class="polaroid-sticker">🌙</span>
+            <div class="polaroid-photo">
+                <img src="5.jpg" alt="A beautiful golden hour moment" loading="lazy">
+            </div>
+            <p class="polaroid-caption">Golden Hour</p>
+        </div>
+
+        <div class="polaroid">
+            <span class="polaroid-sticker">👑</span>
+            <div class="polaroid-photo">
+                <img src="6.jpg" alt="My forever favorite girl" loading="lazy">
+            </div>
+            <p class="polaroid-caption">Forever My Girl</p>
+        </div>
+
+    </div>
+</section>
+
+
 
         <!-- WHY I LOVE YOU -->
         <section class="section" id="reasons">
